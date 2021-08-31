@@ -33,3 +33,9 @@ function pariDispari(valore){
 console.log(pariDispari(somma));
 
 // Dichiariamo chi ha vinto.
+
+if (numero1 == "dispari" && pariDispari(somma) == "La somma dei due numeri è dispari" || numero1 == "pari" && pariDispari(somma) == "La somma dei due numeri è pari") {
+    alert("Ha vinto il giocatore"); 
+} else {
+    alert("Ha vinto il computer");
+} 
