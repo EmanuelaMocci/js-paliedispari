@@ -1,6 +1,7 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 var numero1 = prompt("Scegli se inserire un numero pari o dispari");
 
+// Validazione scelta tra pari o dispari
 if (numero1 == "dispari") {
     var numero2 = parseInt(prompt("Scegli un numero da 1 a 5"));
 } else if (numero1 == "pari"){
@@ -10,6 +11,11 @@ if (numero1 == "dispari") {
 }
 console.log(numero2);
 
+// Validazione scelta numero da 1 a 5
+while (numero2 < 1 || numero2 > 5){
+    var numero2 = parseInt(prompt("Scegli un numero da 1 a 5"));  
+} 
+   
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function randomNumber(min, max){
     var random = Math.floor(Math.random() * (max - min +1)) + min;
