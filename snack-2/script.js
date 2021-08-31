@@ -23,12 +23,13 @@ var somma = numero2 + numeroCpu;
 console.log(somma);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-function pariDispari(somma){
-    if (somma % 2 == 0) {
-        return ("La somma dei due numeri è pari");
+function pariDispari(valore){
+    if (valore % 2 == 0) {
+        return "La somma dei due numeri è pari";
     } else {
-        return ("La somma dei due numeri è dispari");
+        return "La somma dei due numeri è dispari";
     }
 }
+console.log(pariDispari(somma));
 
 // Dichiariamo chi ha vinto.
